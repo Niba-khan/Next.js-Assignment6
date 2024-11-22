@@ -12,35 +12,35 @@ export default function Courses() {
     {
       category: 'Programming',
       title: 'Introduction to Python',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
+      description:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
       price: '$400',
       image: '/images/course2.png',
     },
     {
       category: 'Business',
       title: 'Data Analysis for Beginners',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
+      description:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
       price: '$400',
       image: '/images/course3.png',
     },
     {
       category: 'Art',
       title: 'Art Specialization',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
+      description:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
       price: '$400',
       image: '/images/course4.png',
     },
     {
       category: 'Law',
       title: 'Rule of Law',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
+      description:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
       price: '$400',
       image: '/images/course5.png',
     },
     {
       category: 'Tech',
       title: 'Introduction to Webflow',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
+      description:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
       price: '$400',
       image: '/images/course6.png',
     },
@@ -49,8 +49,8 @@ export default function Courses() {
   return (
     <div className="w-full p-8">
       <div className="text-center mb-8">
-        <h1 className="text-[56px] sm:text-4xl font-bold text-[#000000]">Courses</h1>
-        <p className="text-[16px] sm:text-xl text-[#000000] mt-2">Your Ultimate Guide to learning</p>
+        <h1 className="text-4xl font-bold text-[#000000]">Courses</h1>
+        <p className="text-xl text-[#000000] mt-2">Your Ultimate Guide to learning</p>
       </div>
 
       <div className="flex flex-wrap items-center justify-center gap-[16px] text-[16px] mt-10 mb-11">
@@ -59,21 +59,16 @@ export default function Courses() {
         <h3>Best Price</h3>
       </div>
 
-      {/* Responsive Grid Layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[24px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-[24px]">
         {courseData.map((course, index) => (
-          <div key={index} className="w-full sm:w-[416px] bg-[#F7F7F7] shadow-lg overflow-hidden">
-            {/* Image with Responsive Sizing */}
-            <div className="relative w-full h-60">
-              <Image
-                src={course.image}
-                alt={course.title}
-                layout="fill"  // Ensure image covers the div
-                objectFit="cover"
-                className="object-cover"
-              />
-            </div>
-
+          <div key={index} className="w-full max-w-[416px] bg-[#F7F7F7] shadow-lg overflow-hidden">
+            <Image
+              src={course.image}
+              alt={course.title}
+              width={416}
+              height={300}
+              className="object-cover"
+            />
             <div className="p-4">
               <div className="flex items-center">
                 <p className="text-[14px] font-semibold text-[#000000]">{course.category}</p>
@@ -83,15 +78,17 @@ export default function Courses() {
                 </div>
               </div>
 
-              <h3 className="text-[#000000] text-[20px] sm:text-[24px] font-[700] mt-3">{course.title}</h3>
+              <h3 className="text-[#000000] text-[20px] sm:text-[24px] md:text-[24px] font-[700] mt-3">
+                {course.title}
+              </h3>
 
               <p className="text-[14px] sm:text-[16px] text-[#000000] mt-2">{course.description}</p>
 
               <div className="flex items-center justify-between mt-4">
-                <button className="border-[1px] border-[#000000] w-[117px] h-[40px] rounded text-[14px] sm:text-[16px]">
+                <button className="border-[1px] border-[#000000] w-[117px] h-[40px] rounded">
                   Enroll Now
                 </button>
-                <span className="text-[14px] sm:text-[16px]">{course.price}</span>
+                <span className="text-[16px]">{course.price}</span>
               </div>
             </div>
           </div>
@@ -100,7 +97,7 @@ export default function Courses() {
 
       {/* Button */}
       <div className="flex items-center justify-center mt-8 mb-24">
-        <button className="border-[1px] border-[#000000] px-[16px] py-[8px] rounded hover:bg-black hover:text-white transition-all text-sm sm:text-base">
+        <button className="border-[1px] border-[#000000] px-[16px] py-[8px] rounded hover:bg-black hover:text-white transition-all">
           View All Courses
         </button>
       </div>

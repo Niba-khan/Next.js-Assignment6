@@ -13,7 +13,7 @@ export default function Team() {
         {/* Team Member 1 */}
         <div className="w-full text-center flex flex-col items-center justify-center">
           <Image
-            src={"/Images/team1.png"}
+            src="/images/team1.png"
             alt="Team1"
             height={80}
             width={80}
@@ -31,7 +31,7 @@ export default function Team() {
         {/* Team Member 2 */}
         <div className="w-full text-center flex flex-col items-center justify-center">
           <Image
-            src={"/Images/team2.png"}
+            src="/images/team2.png"
             alt="Team2"
             height={80}
             width={80}
@@ -49,7 +49,7 @@ export default function Team() {
         {/* Team Member 3 */}
         <div className="w-full text-center flex flex-col items-center justify-center">
           <Image
-            src={"/Images/team3.png"}
+            src="/images/team3.png"
             alt="Team3"
             height={80}
             width={80}
@@ -67,7 +67,7 @@ export default function Team() {
         {/* Team Member 4 */}
         <div className="w-full text-center flex flex-col items-center justify-center">
           <Image
-            src={"/Images/team4.png"}
+            src="/images/team4.png"
             alt="Team4"
             height={80}
             width={80}
@@ -80,7 +80,7 @@ export default function Team() {
         {/* Team Member 5 */}
         <div className="w-full text-center flex flex-col items-center justify-center">
           <Image
-            src={"/Images/team5.png"}
+            src="/images/team5.png"
             alt="Team5"
             height={80}
             width={80}
@@ -93,7 +93,7 @@ export default function Team() {
         {/* Team Member 6 */}
         <div className="w-full text-center flex flex-col items-center justify-center">
           <Image
-            src={"/Images/team6.png"}
+            src="/images/team6.png"
             alt="Team6"
             height={80}
             width={80}

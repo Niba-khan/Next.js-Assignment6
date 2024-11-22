@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export default function CourseCategory() {
   return (
-    <div className="bg-[#FFFFFF] w-full max-w-[1280px] gap-[64px] mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-16">
-      {/* Heading Section */}
+    <div className="bg-[#FFFFFF] w-full max-w-[1280px] gap-[64px] mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+
       <div className="w-full text-center mb-[40px]">
         <h2 className="text-[#000000] text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold leading-[1.2]">
           Explore Courses By Category
@@ -101,7 +101,7 @@ export default function CourseCategory() {
           </div>
         </div>
 
-        {/* View All Courses Button */}
+        {/* Button */}
         <div className="flex justify-center mt-[32px]">
           <button className="border-[1px] border-[#000000] px-[16px] py-[10px] bg-[#FFFFFF] text-[#000000] text-[16px] sm:text-[18px] md:text-[20px] font-medium">
             View All Courses

@@ -30,8 +30,7 @@ export default function Footer() {
       </div>
 
       <div className="flex flex-wrap md:flex-nowrap items-start justify-between mb-10">
-        {/* Logo */}
-        <div className="w-full md:w-auto">
+         <div className="w-full md:w-auto">
           <Image
             src="/images/logo.png"
             alt="logo"
@@ -40,7 +39,7 @@ export default function Footer() {
           />
         </div>
 
-        {/* Courses Section */}
+      
         <div className="w-full sm:w-1/2 md:w-1/4">
           <h4 className="font-semibold text-black text-lg mb-2">Courses</h4>
           <div className="space-y-2 text-sm">
@@ -75,7 +74,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Footer Bottom */}
+  
       <div className="border-t border-[#000000] pt-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4">
         <p className="text-[14px] text-[#000000]">2023 Ddsgnr. All rights reserved.</p>
 
@@ -85,7 +84,7 @@ export default function Footer() {
           <a href="#" className="text-[#000000]">Cookies Settings</a>
         </div>
 
-        {/* Social Icons */}
+        
         <div className="flex gap-4">
           <FaFacebookF size={18} color="#000000" />
           <FaInstagram size={18} color="#000000" />

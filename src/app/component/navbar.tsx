@@ -29,10 +29,10 @@ export default function Navbar() {
                 </div>
             </div>
             <div className="bg-white h-[20px]"></div>
-            {/* Logo and Menu */}
+           
             <div className="bg-[#F7F7F7] border-b-2 border-[#000000]">
                 <div className="container mx-auto flex justify-between items-center p-4">
-                    {/* Logo */}
+                    
                     <div className="flex items-center space-x-2">
                         <Image
                             src="/images/logo.png"
@@ -43,28 +43,27 @@ export default function Navbar() {
                         />
                     </div>
 
-                    {/* Desktop Menu */}
                     <div className="hidden md:flex bg-[#FFFFFF] w-auto h-[44px] gap-[16px] md:gap-[32px] px-3 items-center">
-                        <a href="#home" className="text-[#000000]">
+                        <a href="#" className="text-[#000000]">
                             Home
                         </a>
-                        <a href="#courses" className="text-[#000000]">
+                        <a href="#" className="text-[#000000]">
                             Courses
                         </a>
-                        <a href="#services" className="text-[#000000]">
+                        <a href="#" className="text-[#000000]">
                             Services
                         </a>
-                        <a href="#achievement" className="text-[#000000]">
+                        <a href="#" className="text-[#000000]">
                             Achievement
                         </a>
-                        <a href="#about" className="text-[#000000]">
+                        <a href="#" className="text-[#000000]">
                             About Us
                         </a>
                         <a href="#testimonial" className="text-[#000000]">
                             Testimonial
                         </a>
 
-                        {/* Buttons */}
+                      
                         <div className="flex gap-[8px] md:gap-[16px] ml-auto items-center">
                             <button className="w-[80px] h-[40px] border-[1px] border-[#000000] rounded-md">
                                 Login
@@ -75,59 +74,46 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    {/* Mobile Menu Toggle */}
+                    {/* Toggle Button */}
                     <button
                         className="md:hidden"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
-                        {/* Hamburger or Close Icon */}
                         {isMenuOpen ? (
-                            <span className="bg-[#F7F7F7] text-2xl">&times;</span> // Close icon
+                            <span className="bg-[#F7F7F7] text-2xl">&times;</span> 
                         ) : (
-                            <span className="bg-[#F7F7F7] text-2xl">&#9776;</span> // Hamburger icon
+                            <span className="bg-[#F7F7F7] text-2xl">&#9776;</span> 
                         )}
                     </button>
                 </div>
 
-                {/* Mobile Menu */}
-                {isMenuOpen && (
-
-                
-<div className="container mx-auto flex justify-between items-center p-4">
-{/* Logo */}
-<div className="flex items-center space-x-2">
-    <Image
-        src="/images/logo.png"
-        alt="Logo"
-        width={130.6}
-        height={30.38}
-        className="h-auto w-auto"
-    />
-</div>
+                {isMenuOpen && (             
+                 <div className="container mx-auto flex justify-between items-center p-4">
+              
                     <div className="flex flex-col bg-[#F7F7F7] border-t-2 border-[#000000] p-4 md:hidden">
-                        <a href="#home" className="text-[#000000] py-2">
+                        <a href="#" className="text-[#000000] py-2">
                             Home
                         </a>
-                        <a href="#courses" className="text-[#000000] py-2">
+                        <a href="#" className="text-[#000000] py-2">
                             Courses
                         </a>
-                        <a href="#services" className="text-[#000000] py-2">
+                        <a href="#" className="text-[#000000] py-2">
                             Services
                         </a>
-                        <a href="#achievement" className="text-[#000000] py-2">
+                        <a href="#" className="text-[#000000] py-2">
                             Achievement
                         </a>
-                        <a href="#about" className="text-[#000000] py-2">
+                        <a href="#" className="text-[#000000] py-2">
                             About Us
                         </a>
-                        <a href="#testimonial" className="text-[#000000] py-2">
+                        <a href="#" className="text-[#000000] py-2">
                             Testimonial
                         </a>
                         <div className="flex flex-col gap-2 mt-4">
-                            <button className="w-full h-[40px] border-[1px] border-[#000000] rounded-md">
+                            <button className="w-[178px] h-[48px] border-[1px] border-[#000000] rounded-md">
                                 Login
                             </button>
-                            <button className="w-full h-[40px] bg-[#000000] text-[#FFFFFF] rounded-md">
+                            <button className="w-[178px] h-[48px] bg-[#000000] text-[#FFFFFF] rounded-md">
                                 Sign Up
                             </button>
                         </div>
